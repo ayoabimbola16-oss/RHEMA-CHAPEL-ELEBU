@@ -14,10 +14,10 @@ const departmentDetails = {
         title: "Ushers Department",
         details: "Ushers welcome members and guests, ensuring a warm and welcoming atmosphere for all who visit. They help with seating and assist in various church activities."
     },
-    youth: {
+    intercesory: {
         icon: "🙏",
-        title: "Youth Ministry",
-        details: "A dynamic group for young people aged 18-35. We organise camps, seminars, sports activities, and social outings to foster spiritual growth and unity among young members."
+        title: "Intercesory",
+        details: "The Intercessory Department is the prayer unit of the church, committed to standing in the gap for others through consistent and fervent prayers, seeking God’s guidance, protection, and breakthroughs."
     },
     children: {
         icon: "🧑",
