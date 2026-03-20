@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhema Chapel Elebu - Modern Church Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ANIMATED BACKGROUND PARTICLES -->
+    <div class="particles" id="particlesContainer"></div>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-cross"></i> Rhema Chapel International Churches(Elebu)
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Fund</a></li>
+                <li><a href="#departments">Departments &amp; Fellowships</a></li>
+                <li><a href="#pastors">Ministers</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg">
+            <div class="hero-church-bg"></div>
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="animated-gradient"></div>
+        </div>
+        <div class="hero-content">
+            <div class="logo-wrapper">
+                <div class="logo-circle">
+                    <div class="logo-glow"></div>
+                    <img src="image/WhatsApp Image 2026-03-17 at 00.06.20.jpeg" alt="Church Logo" class="church-logo">
+                </div>
+            </div>
+            <h1 class="church-title animated-text">
+                <span class="letter">R</span><span class="letter">H</span><span class="letter">E</span>
+                <span class="letter">M</span><span class="letter">A</span><span class="letter word-gap"> </span>
+                <span class="letter">C</span><span class="letter">H</span>
+                <span class="letter">A</span><span class="letter">P</span><span class="letter">E</span>
+                <span class="letter">L</span><span class="letter word-gap"> </span>
+                <span class="letter">E</span><span class="letter">L</span><span class="letter">E</span>
+                <span class="letter">B</span><span class="letter">U</span>
+            </h1>
+            <p class="church-tagline animated-fade">"We are the people of the Word changing the world"</p>
+            <div class="scroll-indicator">
+                <div class="mouse"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="statistics-section">
+        <h2 class="section-title animated-section-title">Church Statistics</h2>
+        <div class="stats-container">
+            <div class="stat-card stat-pulse">
+                <div class="stat-icon">👥</div>
+                <h3>Total Members</h3>
+                <p class="stat-number counter" data-target="450">100+</p>
+                <span>+</span>
+            </div>
+            <div class="stat-card stat-pulse" style="animation-delay: 0.2s;">
+                <div class="stat-icon">⛪</div>
+                <h3>Ministers</h3>
+                <p class="stat-number counter" data-target="5">4</p>
+            </div>
+            <div class="stat-card stat-pulse" style="animation-delay: 0.4s;">
+                <div class="stat-icon">🤝</div>
+                <h3>Departments</h3>
+                <p class="stat-number counter" data-target="12">15+</p>
+            </div>
+            <div class="stat-card stat-pulse" style="animation-delay: 0.6s;">
+                <div class="stat-icon">📅</div>
+                <h3>Year Established</h3>
+                <p class="stat-number counter" data-target="15">2017</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TITHE & OFFERING ACCOUNTS -->
+    <section id="about" class="accounts-section">
+        <h2 class="section-title animated-section-title">Give to God's Work</h2>
+        <div class="accounts-grid">
+            <div class="account-card tithe-card card-hover-glow">
+                <div class="account-icon floating-icon">💰</div>
+                <h3>Tithe &amp; Offering</h3>
+                <div class="account-details">
+                    <p><strong>Account Number:</strong></p>
+                    <p class="account-number">0256763132</p>
+                    <p class="bank-row"><strong>Bank:</strong> <img src="image/WhatsApp Image 2026-03-18 at 23.43.27.jpeg" alt="GTCO" class="bank-logo"> GTBank</p>
+                    <p><strong>Account Name:</strong> RHEMA CHAPEL IBADAN MAIN ACCT</p>
+                </div>
+                <button class="copy-btn btn-ripple" onclick="copyToClipboard('0256763132')">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+            <div class="account-card building-card card-hover-glow">
+                <div class="account-icon floating-icon">🏗️</div>
+                <h3>Building Project</h3>
+                <div class="account-details">
+                    <p><strong>Account Number:</strong></p>
+                    <p class="account-number">0170042249</p>
+                    <p class="bank-row"><strong>Bank:</strong> <img src="image/WhatsApp Image 2026-03-18 at 23.43.27.jpeg" alt="GTCO" class="bank-logo"> GTBank</p>
+                    <p><strong>Account Name:</strong> RHEMA CHAPEL CONVETION ACCT</p>
+                </div>
+                <button class="copy-btn btn-ripple" onclick="copyToClipboard('0170042249')">
+                    <i class="fas fa-copy"></i> Copy
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHURCH BUILDING IMAGE — SLIDESHOW (11 slides, fully autonomous) -->
+    <section class="church-image-section">
+        <h2 class="section-title animated-section-title">Our Beautiful Sanctuary</h2>
+        <div class="image-container slideshow-container">
+
+            <div class="slide active">
+                <img src="image/WhatsApp Image 2026-03-18 at 23.45.19.jpeg" class="church-image" alt="Sanctuary View 1">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-18 at 23.45.18.jpeg" class="church-image" alt="Sanctuary View 2">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-18 at 23.45.18 (2).jpeg" class="church-image" alt="Sanctuary View 3">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-18 at 23.45.19 (1).jpeg" class="church-image" alt="Sanctuary View 4">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-19 at 00.02.20 (1).jpeg" class="church-image" alt="Sanctuary View 5">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-19 at 00.02.21.jpeg" class="church-image" alt="Sanctuary View 6">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-19 at 00.36.55.jpeg" class="church-image" alt="Sanctuary View 7">
+            </div>
+            <!-- Slides 8–11: replace src with your actual extra image filenames -->
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-19 at 00.36.54 (2).jpeg" class="church-image" alt="Sanctuary View 8">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-19 at 00.14.59.jpeg" class="church-image" alt="Sanctuary View 9">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-18 at 23.45.20.jpeg" class="church-image" alt="Sanctuary View 10">
+            </div>
+            <div class="slide">
+                <img src="image/WhatsApp Image 2026-03-19 at 00.36.54 (1).jpeg" class="church-image" alt="Sanctuary View 11">
+            </div>
+
+            <div class="image-overlay">
+                <p class="overlay-text">Welcome to Rhema Chapel Elebu</p>
+            </div>
+
+            <!-- Arrow buttons -->
+            <button class="slide-btn slide-prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="slide-btn slide-next" onclick="changeSlide(1)">&#10095;</button>
+
+            <!-- Dot indicators (11 dots) -->
+            <div class="slide-dots">
+                <span class="dot active-dot" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+                <span class="dot" onclick="goToSlide(4)"></span>
+                <span class="dot" onclick="goToSlide(5)"></span>
+                <span class="dot" onclick="goToSlide(6)"></span>
+                <span class="dot" onclick="goToSlide(7)"></span>
+                <span class="dot" onclick="goToSlide(8)"></span>
+                <span class="dot" onclick="goToSlide(9)"></span>
+                <span class="dot" onclick="goToSlide(10)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCRIPTURE SECTION -->
+    <section class="scripture-section">
+        <h2 class="section-title animated-section-title">Scripture</h2>
+        <div class="scripture-card glowing-card">
+            <div class="quote-icon">&#8221;</div>
+            <p class="scripture-text animated-text-shimmer">For I know the plans I have for you, declares the Lord, plans for welfare and not for evil, to give you a future and a hope.</p>
+            <p class="scripture-reference">— Jeremiah 29:11 (ESV)</p>
+        </div>
+    </section>
+
+    <!-- DEPARTMENTS SECTION -->
+    <section id="departments" class="departments-section">
+        <h2 class="section-title animated-section-title">Church Departments &amp; FELLOWSHIP</h2>
+        <div class="departments-grid">
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('choir')">
+                <div class="dept-icon">🎵</div>
+                <h3>Music</h3>
+                <p>Music &amp; Worship</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('ushers')">
+                <div class="dept-icon">👥</div>
+                <h3>Ushering</h3>
+                <p>Hospitality</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('youth')">
+                <div class="dept-icon">🙏</div>
+                <h3>Intercesory</h3>
+                <p>Prayer</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('children')">
+                <div class="dept-icon">🧑</div>
+                <h3>Children's Department</h3>
+                <p>Grooming young ones in the lord</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('women')">
+                <div class="dept-icon">👩‍🤝‍👩</div>
+                <h3>Women Fellowship</h3>
+                <p>Women's Ministry</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('men')">
+                <div class="dept-icon">👨‍🤝‍👨</div>
+                <h3>Men Fellowship</h3>
+                <p>Men's Ministry</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('evangelism')">
+                <div class="dept-icon">📢</div>
+                <h3>Evangelism</h3>
+                <p>Outreach</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('praise')">
+                <div class="dept-icon">🎥</div>
+                <h3>Drama</h3>
+                <p>Drama Ministry</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('intercession')">
+                <div class="dept-icon">👛</div>
+                <h3>Treasury</h3>
+                <p>Finance</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('media')">
+                <div class="dept-icon">📱</div>
+                <h3>Media &amp; Tech</h3>
+                <p>Technology and publication</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('security')">
+                <div class="dept-icon">🔐</div>
+                <h3>Security</h3>
+                <p>Safety</p>
+                <div class="card-shine"></div>
+            </div>
+            <div class="dept-card dept-card-tilt" onclick="showDepartment('welfare')">
+                <div class="dept-icon">❤️</div>
+                <h3>Welfare</h3>
+                <p>Care &amp; Support</p>
+                <div class="card-shine"></div>
+            </div>
+        </div>
+
+        <!-- Department Modal -->
+        <div id="deptModal" class="modal-dept">
+            <div class="modal-content-dept modal-bounce">
+                <span class="close-dept" onclick="closeDepartment()">&times;</span>
+                <div class="dept-modal-icon" id="deptModalIcon"></div>
+                <h2 id="deptModalTitle"></h2>
+                <p id="deptModalDetails"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MINISTERS SECTION -->
+    <section id="pastors" class="pastors-section">
+        <h2 class="section-title animated-section-title">OUR MINISTERS</h2>
+        <div class="pastors-grid">
+            <div class="pastor-card pastor-card-stagger" style="animation-delay: 0s;">
+                <div class="pastor-image-wrapper">
+                    <img src="image/WhatsApp Image 2026-03-17 at 00.20.47.jpeg" alt="Min Evans Akinlolu">
+                    <div class="pastor-overlay"><p>MINISTER IN CHARGE</p></div>
+                </div>
+                <h3>MIN EVANS AKINLOLU</h3>
+                <p class="pastor-role">MIC</p>
+                <p class="pastor-bio">MINISTER IN CHARGE</p>
+            </div>
+            <div class="pastor-card pastor-card-stagger" style="animation-delay: 0.1s;">
+                <div class="pastor-image-wrapper">
+                    <img src="image/WhatsApp Image 2026-03-17 at 00.20.48.jpeg" alt="Min Adetunji Abimbola">
+                    <div class="pastor-overlay"><p>ASSISTANT MIC</p></div>
+                </div>
+                <h3>MIN ADETUNJI ABIMBOLA</h3>
+                <p class="pastor-role">ASSISTANT MIC</p>
+                <p class="pastor-bio">ASSISTANT MINISTER IN CHARGE</p>
+            </div>
+            <div class="pastor-card pastor-card-stagger" style="animation-delay: 0.2s;">
+                <div class="pastor-image-wrapper">
+                    <img src="image/WhatsApp Image 2026-03-17 at 00.20.47 (2).jpeg" alt="Min Oluwole Ladejo">
+                    <div class="pastor-overlay"><p>MINISTER</p></div>
+                </div>
+                <h3>MIN OLUWOLE LADEJO</h3>
+                <p class="pastor-role">MINISTER</p>
+                <p class="pastor-bio">MINISTER</p>
+            </div>
+            <div class="pastor-card pastor-card-stagger" style="animation-delay: 0.3s;">
+                <div class="pastor-image-wrapper">
+                    <img src="image/WhatsApp Image 2026-03-17 at 01.12.57.jpeg" alt="Min Paul Abu">
+                    <div class="pastor-overlay"><p>MINISTER</p></div>
+                </div>
+                <h3>MIN PAUL ABU</h3>
+                <p class="pastor-role">MINISTER</p>
+                <p class="pastor-bio">MINISTER</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCATION / CONTACT SECTION -->
+    <section id="contact" class="location-section parallax-section">
+        <h2 class="section-title animated-section-title">📍 Find Us</h2>
+
+        <div class="contact-cards-grid">
+
+            <!-- ADDRESS CARD -->
+            <div class="contact-info-card contact-card-address">
+                <div class="contact-card-glow-blob"></div>
+                <div class="contact-card-inner">
+                    <div class="contact-icon-ring contact-icon-ring--pink">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-card-label">Our Location</div>
+                    <div class="contact-card-value">
+                        NNPC Pipeline Road,<br>
+                        Off ICAST Road,<br>
+                        Oke Ibukun Zone 3 Elebu,<br>
+                        Oluyole Extension, Ibadan
+                    </div>
+                </div>
+            </div>
+
+            <!-- WHATSAPP CARD -->
+            <div class="contact-info-card contact-card-phone">
+                <div class="contact-card-glow-blob"></div>
+                <div class="contact-card-inner">
+                    <div class="contact-icon-ring contact-icon-ring--green">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="contact-card-label">WhatsApp Us</div>
+                    <div class="contact-card-value contact-card-value--big">
+                        <a href="https://wa.me/2348060471838" target="_blank" rel="noopener noreferrer">08060471838</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EMAIL CARD -->
+            <div class="contact-info-card contact-card-email">
+                <div class="contact-card-glow-blob"></div>
+                <div class="contact-card-inner">
+                    <div class="contact-icon-ring contact-icon-ring--blue">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-card-label">Write to Us</div>
+                    <div class="contact-card-value">
+                        <a href="https://mail.google.com/mail/?view=cm&to=rhemachapelchurchelebu@gmail.com" target="_blank" rel="noopener noreferrer">
+                            rhemachapelchurchelebu<br>@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICE TIMES CARD -->
+            <div class="contact-info-card contact-card-times">
+                <div class="contact-card-glow-blob"></div>
+                <div class="contact-card-inner">
+                    <div class="contact-icon-ring contact-icon-ring--gold">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-card-label">Service Times</div>
+                    <div class="service-times-list">
+                        <div class="service-time-row">
+                            <span class="service-day-badge">WED</span>
+                            <div class="service-time-info">
+                                <span class="service-time-hour">5:30 PM – 6:30 PM</span>
+                                <span class="service-time-name">School of Ministry</span>
+                            </div>
+                        </div>
+                        <div class="service-time-row">
+                            <span class="service-day-badge">SAT</span>
+                            <div class="service-time-info">
+                                <span class="service-time-hour">7:00 AM – 8:30 AM</span>
+                                <span class="service-time-name">Prayer Meeting</span>
+                            </div>
+                        </div>
+                        <div class="service-time-row">
+                            <span class="service-day-badge service-day-badge--highlight">SUN</span>
+                            <div class="service-time-info">
+                                <span class="service-time-hour">8:00 AM – 10:00 AM</span>
+                                <span class="service-time-name">Celebration Service</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MAP -->
+        <div class="map-container-full">
+            <iframe src="https://www.google.com/maps/embed?pb=YOUR_EMBED_CODE" width="100%" height="380" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <!-- SOCIAL MEDIA BAR -->
+        <div class="social-bar-wrap">
+
+            <div class="social-column">
+                <p class="social-label">
+                    <span class="social-label-dot"></span>
+                    Follow Us
+                    <span class="social-label-dot"></span>
+                </p>
+                <p class="social-sublabel">Stay connected &amp; never miss an update</p>
+                <div class="social-cards">
+                    <a href="https://www.instagram.com/rhemachapelchurchelebu?igsh=MWcyd252MHVseG02aA==" target="_blank" rel="noopener noreferrer" class="social-card instagram-card" aria-label="Follow us on Instagram">
+                        <div class="social-card-glow"></div>
+                        <div class="social-icon-wrap"><i class="fab fa-instagram"></i></div>
+                        <div class="social-card-text">
+                            <span class="social-name">Instagram</span>
+                            <span class="social-handle">@rhemachapelchurchelebu</span>
+                        </div>
+                        <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                    <a href="https://www.facebook.com/RhemaChapelElebu/" target="_blank" rel="noopener noreferrer" class="social-card facebook-card" aria-label="Like us on Facebook">
+                        <div class="social-card-glow"></div>
+                        <div class="social-icon-wrap"><i class="fab fa-facebook-f"></i></div>
+                        <div class="social-card-text">
+                            <span class="social-name">Facebook</span>
+                            <span class="social-handle">Rhema Chapel Elebu</span>
+                        </div>
+                        <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-divider-v"></div>
+
+            <div class="social-column">
+                <p class="social-label">
+                    <span class="social-label-dot"></span>
+                    Contact Us
+                    <span class="social-label-dot"></span>
+                </p>
+                <p class="social-sublabel">Reach us directly — we'd love to hear from you</p>
+                <div class="social-cards">
+                    <a href="https://wa.me/2348060471838" target="_blank" rel="noopener noreferrer" class="social-card whatsapp-card" aria-label="Chat with us on WhatsApp">
+                        <div class="social-card-glow"></div>
+                        <div class="social-icon-wrap"><i class="fab fa-whatsapp"></i></div>
+                        <div class="social-card-text">
+                            <span class="social-name">WhatsApp</span>
+                            <span class="social-handle">08060471838</span>
+                        </div>
+                        <div class="social-arrow"><i class="fas fa-arrow-right"></i></div>
+                        <div class="social-ping"></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- APOSTOLIC OVERSIGHT SECTION -->
+    <section class="apostolic-section">
+        <canvas class="stars-canvas" id="starsCanvas"></canvas>
+
+        <svg class="rays" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#c9a84c" transform="translate(450,0)">
+                <polygon points="0,0 -8,500 8,500" opacity="0.7"/>
+                <polygon points="0,0 -15,500 -8,500" opacity="0.4" transform="rotate(-8 0 0)"/>
+                <polygon points="0,0 8,500 15,500" opacity="0.4" transform="rotate(8 0 0)"/>
+                <polygon points="0,0 -5,500 0,500" opacity="0.5" transform="rotate(-22 0 0)"/>
+                <polygon points="0,0 0,500 5,500" opacity="0.5" transform="rotate(22 0 0)"/>
+                <polygon points="0,0 -4,500 1,500" opacity="0.3" transform="rotate(-38 0 0)"/>
+                <polygon points="0,0 -1,500 4,500" opacity="0.3" transform="rotate(38 0 0)"/>
+                <polygon points="0,0 -3,500 2,500" opacity="0.2" transform="rotate(-54 0 0)"/>
+                <polygon points="0,0 -2,500 3,500" opacity="0.2" transform="rotate(54 0 0)"/>
+            </g>
+        </svg>
+
+        <div class="apo-section-header">
+            <div class="crown-icon">&#128081;</div>
+            <h2 class="apo-title">Apostolic Oversight</h2>
+            <div class="gold-divider">
+                <div class="divider-line"></div>
+                <div class="divider-diamond"></div>
+                <div class="divider-line"></div>
+            </div>
+        </div>
+
+        <div class="apo-card-wrap">
+            <div class="photo-frame-outer">
+                <div class="photo-orbit"></div>
+                <div class="photo-orbit photo-orbit-2"></div>
+                <div class="photo-ring"></div>
+                <img src="image/WhatsApp Image 2026-03-17 at 11.23.11.jpeg" alt="Rev. George Adegboye" class="minister-photo-apo">
+            </div>
+
+            <div class="apo-info-panel">
+                <div class="corner corner-tl">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 38 L2 2 L38 2" stroke="#c9a84c" stroke-width="2" fill="none"/>
+                        <circle cx="2" cy="2" r="3" fill="#c9a84c"/>
+                    </svg>
+                </div>
+                <div class="corner corner-tr">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38 38 L38 2 L2 2" stroke="#c9a84c" stroke-width="2" fill="none"/>
+                        <circle cx="38" cy="2" r="3" fill="#c9a84c"/>
+                    </svg>
+                </div>
+                <div class="corner corner-bl">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 2 L2 38 L38 38" stroke="#c9a84c" stroke-width="2" fill="none"/>
+                        <circle cx="2" cy="38" r="3" fill="#c9a84c"/>
+                    </svg>
+                </div>
+                <div class="corner corner-br">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M38 2 L38 38 L2 38" stroke="#c9a84c" stroke-width="2" fill="none"/>
+                        <circle cx="38" cy="38" r="3" fill="#c9a84c"/>
+                    </svg>
+                </div>
+
+                <h3 class="apo-minister-name">REV. GEORGE ADEGBOYE</h3>
+
+                <div class="minister-title-badge">
+                    <div class="badge-dot"></div>
+                    <span>Founder &amp; Apostolic Oversight</span>
+                    <div class="badge-dot"></div>
+                </div>
+
+                <p class="apo-minister-bio">
+                    Rev. George Olawale Adegboye is an Apostle of the New Testament, with a commission to <em>"take the word to the nations of the world,"</em> emphasising its integrity. He is the President of the Ever Increasing Word Ministries, also known as Rhema Chapel International Churches, with many branches worldwide.
+                </p>
+
+                <div class="apo-verse-block">
+                    <p class="verse-text">"For I will give you a mouth and wisdom, which none of your adversaries will be able to withstand or contradict."</p>
+                    <p class="verse-ref">— Luke 21:15</p>
+                </div>
+
+                <div class="apo-stats-row">
+                    <div class="apo-stat-pill">
+                        <span class="apo-stat-num">&#127757;</span>
+                        <span class="apo-stat-lbl">Global Reach</span>
+                    </div>
+                    <div class="apo-stat-pill">
+                        <span class="apo-stat-num">&#128214;</span>
+                        <span class="apo-stat-lbl">Word-Focused</span>
+                    </div>
+                    <div class="apo-stat-pill">
+                        <span class="apo-stat-num">&#9962;</span>
+                        <span class="apo-stat-lbl">Multi-Branch</span>
+                    </div>
+                    <div class="apo-stat-pill">
+                        <span class="apo-stat-num">&#128250;</span>
+                        <span class="apo-stat-lbl">Spirit-Led</span>
+                    </div>
+                </div>
+
+                <div class="apo-about-footer">
+                    <p class="apo-about-title">✦ About Us ✦</p>
+                    <p class="apo-about-text">Rhema Chapel Elebu is a Bible-believing, Spirit-filled church dedicated to spreading God's love and transforming lives through Jesus Christ.</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="apo-copyright">
+            &copy; 2026 Rhema Chapel Elebu. &nbsp;|&nbsp; Designed by Abimbola Ayomide Samuel
+            <button class="designer-btn" onclick="openDesigner()">
+                <span class="designer-btn-glow"></span>
+                <span class="designer-btn-icon">✦</span>
+                View Designer
+                <span class="designer-btn-icon">✦</span>
+            </button>
+        </p>
+    </section>
+
+    <!-- DESIGNER MODAL -->
+    <div id="designerModal" class="designer-modal" onclick="closeDesigner(event)">
+        <div class="designer-modal-inner">
+            <button class="designer-close" onclick="closeDesignerBtn()">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="designer-card">
+                <!-- Full prominent photo -->
+                <div class="designer-photo-wrap">
+                    <div class="designer-orbit"></div>
+                    <div class="designer-orbit designer-orbit-2"></div>
+                    <img src="image/WhatsApp Image 2026-03-19 at 12.45.07.jpeg" alt="Abimbola Ayomide Samuel" class="designer-photo">
+                </div>
+                <!-- Info below photo -->
+                <div class="designer-info">
+                    <p class="designer-tag">✦ WEBSITE DESIGNER ✦</p>
+                    <h2 class="designer-name">Abimbola Ayomide Samuel</h2>
+                    <p class="designer-role">AKA ABIMZZ</p>
+                    <div class="designer-divider">
+                        <div class="divider-line"></div>
+                        <div class="divider-diamond"></div>
+                        <div class="divider-line"></div>
+                    </div>
+                    <p class="designer-quote">I am a passionate tech enthusiast </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
