@@ -34,6 +34,12 @@ const departmentDetails = {
         title: "Men's Ministry",
         details: "Men gathering for accountability, spiritual growth, and service. We meet every Saturday morning for prayer, Bible study, and outreach activities in the community."
     },
+    youth: {
+        icon: "👦",
+        title: "Youth's Ministry",
+        details: "The Youth Fellowship unites young people for worship, growth, and active involvement in church and community."
+
+    },
     evangelism: {
         icon: "📢",
         title: "Evangelism Department",
@@ -44,7 +50,7 @@ const departmentDetails = {
         title: "Drama Ministry",
         details: "Using drama and creative arts to communicate the gospel message. We prepare skits, plays, and theatrical presentations for Sunday services and special programmes."
     },
-    intercession: {
+    money: {
         icon: "👛",
         title: "Treasury Department",
         details: "Managing the financial affairs of the church with transparency and integrity. Responsible for collecting, recording, and disbursing church funds according to approved budgets."
